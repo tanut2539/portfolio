@@ -1,0 +1,16 @@
+@import '../../assets/styles/color.scss';
+
+.notfound-content {
+    color: $black;
+    background-color: #ebedee;
+    .main--notfound {
+        //max-width: 36rem;
+        text-align: center !important;
+        a {
+            width: 40%;
+            margin: 3rem auto;
+            border-radius: 3px;
+            font-size: 1.5rem;
+        }
+    }
+}

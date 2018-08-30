@@ -1,0 +1,88 @@
+@import '../../assets/styles/color.scss';
+
+.index-content {
+    .title {
+        font-weight: 400;
+    }
+    .avatar {
+        position: relative;
+        z-index: 100;
+        margin: 0 auto -108px;
+        width: 192px;
+        height: 192px;
+        background-image: url('../../assets/images/picture.jpg');
+        background-size: cover;
+        border: 3px white solid;
+        border-radius: 100%;
+    }
+    .box {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0 auto;
+        background-color: white;
+        box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.05);
+        border-radius: 10px;
+        overflow: hidden;
+        transition-duration: 172ms;
+        will-change: transform, box-shadow
+    }
+    .languages {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .works {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        .card {
+            border-radius: 10px;
+            .icon {
+                margin: 10px;
+                height: 1.5rem;
+                width: 1.5rem;
+            }
+            img {
+                border-radius: 10px 10px 0 0;
+                width: 100%;
+            }
+        }
+    }
+    .others {
+        .card {
+            border-radius: 10px;
+            .icon {
+                margin: 10px;
+                height: 1.5rem;
+                width: 1.5rem;
+            }
+            img {
+                border-radius: 10px 10px 0 0;
+                width: 100%;
+            }
+        }
+    }
+    #Logo {
+        cursor: pointer;
+        margin: 0 auto 4rem;
+        max-width: 24rem;
+        -webkit-transform: scale(1.125);
+        -ms-transform: scale(1.125);
+        transform: scale(1.125);
+        -webkit-transition: 250ms ease;
+        transition: 250ms ease;
+        width: 80%;
+    }
+
+    #Logo:hover {
+        -webkit-transform: scale(1.2) rotate(1deg);
+        -ms-transform: scale(1.2) rotate(1deg);
+        transform: scale(1.2) rotate(1deg);
+    }
+
+    #Logo:active {
+        -webkit-transform: scale(1.15) rotate(.5deg);
+        -ms-transform: scale(1.15) rotate(.5deg);
+        transform: scale(1.15) rotate(.5deg);
+    }
+}

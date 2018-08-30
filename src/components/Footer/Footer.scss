@@ -1,0 +1,60 @@
+@import '../../assets/styles/color.scss';
+
+.footer {
+    background-color: $black;
+    color: $white;
+    padding: 10rem 1.5rem 2rem;
+    .footer-info {
+        .text-mobile {
+            display: block;
+        }
+        .text-desktop {
+            display: none;
+        }
+        @media screen and (min-width: 1088px){
+            .text-mobile {
+                display: none;
+            }
+            .text-desktop {
+                display: block;
+            }
+        }
+    }
+    .footer-social {
+        padding: 5px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        -webkit-box-pack: space-around;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: space-around;
+        justify-content: space-around;
+        /* social small */
+        .social-sm {
+            display: contents;
+        }
+        @media (min-width: 1024px) {
+            .social-sm {
+                display: none;
+            }
+        }
+        /* social large */
+        .social-lg {
+            display: contents;
+        }
+        @media (max-width: 767px) {
+            .social-lg {
+                display: none;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .social-lg {
+                display: none;
+            }
+        }
+    }
+}

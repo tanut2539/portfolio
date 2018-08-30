@@ -1,0 +1,74 @@
+@import url(../fonts/font.css);
+@import './color.scss';
+
+body {
+    height: 100vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: $white;
+    color: $black;
+    font-family: "DB-Adman-X", "Helvetica Neue","Helvetica","Arial, sans-serif";
+    background-color: #ebedee;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+button, input, select, textarea {
+    font-family: "DB-Adman-X", "Helvetica Neue","Helvetica","Arial, sans-serif";
+    font-weight: 400;
+}
+
+.is-cloudy {
+    color: $black;
+    background-color: #EBEDEE;
+}
+
+.is-darknight {
+    color: $white;
+    background-color: $black;
+}
+
+.is-dark-blue {
+    color: $white;
+    background-color: #34515E;
+}
+
+.is-yellow {
+    color: #FFDD57;
+    background-color: $white;
+}
+
+.icon {
+    margin: 10px;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.spacer {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    background: none;
+    border: none
+}
+
+.spacer.is-1 {
+    height: 1rem;
+}
+
+.spacer.is-2 {
+    height: 2rem;
+}
+
+.spacer.is-3 {
+    height: 3rem;
+}
+
+::selection {
+    background-color: $mustard-yellow;
+    color: $black;
+}
